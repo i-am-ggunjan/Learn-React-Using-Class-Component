@@ -1,12 +1,30 @@
 import { Component } from "react";
+import PassingData from "./components/PassingData";
 
 class App extends Component {
   constructor() {
     super();
+    this.age = 50;
+    this.name = "Gunjan";
   }
 
   render() {
-    return <>App component</>;
+    return (
+      <>
+        I am class based App component
+        <br></br>
+        <PassingData
+          // name={this.name}
+          // age={this.age}
+          // gender = {gender}
+          login={true}
+          na={NaN}
+        >
+          <p>I am child</p>
+          <p>i am 2nd child</p>
+        </PassingData>
+      </>
+    );
   }
 }
 
