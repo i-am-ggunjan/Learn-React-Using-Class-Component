@@ -1,5 +1,6 @@
 import { Component } from "react";
-import PassingData from "./components/PassingData";
+import FormHandling from "./components/FormHandling";
+// import PassingData from "./components/PassingData";
 
 class App extends Component {
   constructor() {
@@ -12,8 +13,10 @@ class App extends Component {
     return (
       <>
         I am class based App component
+        <br></br><br/>
+        <FormHandling />
         <br></br>
-        <PassingData
+        {/* <PassingData
           // name={this.name}
           // age={this.age}
           // gender = {gender}
@@ -22,7 +25,7 @@ class App extends Component {
         >
           <p>I am child</p>
           <p>i am 2nd child</p>
-        </PassingData>
+        </PassingData> */}
       </>
     );
   }
