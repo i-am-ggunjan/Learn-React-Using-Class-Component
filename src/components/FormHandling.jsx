@@ -14,6 +14,14 @@ class FormHandling extends Component {
     e.preventDefault();
     console.log("Username : " + this.state.uname);
     console.log("Password : " + this.state.upass);
+    let obj = {
+      Name: this.state.uname,
+      Pass: this.state.upass,
+    };
+
+    let storageData = JSON.stringify(obj);
+    localStorage.setItem(obj.Name, storageData);
+    console.log(storageData);
   };
 
   handleName = (e) => {
